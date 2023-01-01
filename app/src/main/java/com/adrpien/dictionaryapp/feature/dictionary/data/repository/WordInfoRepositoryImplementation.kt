@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
 
-class WordInfoRepositoryImplementation(
+class WordInfoRepositoryImplementation  (
     private val api: DictionaryApi,
     private val dao: WordInfoDao) : WordInfoRepository {
 
@@ -37,7 +37,7 @@ class WordInfoRepositoryImplementation(
         }
 
         val newWordInfos = dao.getWordInfos(word).map { it.toWordInfo() }
-        emit(Resource.success(newWordInfos ))
+        emit(Resource.success(newWordInfos  ))
     }
 
 }

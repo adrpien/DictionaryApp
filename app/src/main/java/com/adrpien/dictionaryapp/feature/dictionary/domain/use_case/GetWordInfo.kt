@@ -6,7 +6,9 @@ import com.adrpien.dictionaryapp.feature.dictionary.domain.repository.WordInfoRe
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
-class GetWordInfo(
+
+// Use case just single thing user can do in your app
+class  GetWordInfo(
     private val repository: WordInfoRepository
 ) {
 

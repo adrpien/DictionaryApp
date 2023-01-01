@@ -8,7 +8,7 @@ import com.google.gson.reflect.TypeToken
 
 @ProvidedTypeConverter
 class Converters(
-    private val jsonParser: JsonParser
+    private val jsonParser:  JsonParser
 ) {
 
     @TypeConverter
